@@ -35,8 +35,8 @@ def clean():
 
 @task
 def radon():
-  sh('radon cc src -a -nb')
-  sh('radon cc src -a -nb > radon.report')
+  sh('python -m radon cc src -a -nb')
+  sh('python -m radon cc src -a -nb > radon.report')
   if (os.stat("radon.report").st_size != 0):
     raise Exception('radon found complex code')
 
