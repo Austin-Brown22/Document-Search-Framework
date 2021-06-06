@@ -1,6 +1,6 @@
 import unittest
 
-from src.preprocessor_interfacce import *
+from src.preprocessor_interface import *
 
 class TestPreprocessor(unittest.TestCase):
     
